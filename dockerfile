@@ -1,10 +1,6 @@
 FROM python:3.11.3-alpine
-#RUN apk add --no-cache curl
-
 
 WORKDIR /karandocker
-
-RUN pip install pip --upgrade
 
 COPY requirements.txt requirements.txt
 
