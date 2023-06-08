@@ -26,4 +26,4 @@ jobs:
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/karanimage:latest
 
       - name: Run Docker container
-        run: docker run -d -p 8000:8000 ${{ secrets.DOCKERHUB_USERNAME }}/karanimage:latest
+        run: docker run -d -p 8001:8000 ${{ secrets.DOCKERHUB_USERNAME }}/karanimage:latest
