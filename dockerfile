@@ -21,7 +21,7 @@
 # CMD [ "python","manage.py","runserver","0.0.0.0:8000" ]
 
 FROM python:3.10.0-alpine3.15
-
+ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 COPY requirements.txt /app
